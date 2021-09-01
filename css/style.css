@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #EDEDED;
+    margin: 0;
+    padding: 0;
+    font-family: Avenir, sans-serif;
+}
+
+
+/* Haut de la page */
+header {
+    background: url("../img/etoiles.jpg");
+    background-size: cover;
+    height: 120px;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0px 0px 15px #333;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+h1, header p {
+    color: #fff;
+    padding-left: 20px;
+}
+/* */
+
+/* photo de Jane doe */
+.photo {
+    text-align: center;
+    margin-top: -80px;
+}
+
+.photo img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+/* */
+
+
+/* Bloc info Perso  */
+
+.infosperso {
+    width: 90%;
+    background: #fff;
+    height: auto;
+    box-shadow: 0px 0px 15px #333;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+}
+
+
+/* Bloc qui */
+.qui, .contact, .rs {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3%;
+}
+
+.qui {
+    width: 45%;
+    border-right: 4px solid #333;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.qui p {
+    margin-right: 4%;
+}
+
+.qui a {
+    display: block;
+    text-align: center;
+    background: #eeaa00;
+    padding: 10px;
+    margin: 10px 5% 5% auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px;
+    text-decoration: none;
+    color: black;
+}
+
+.qui a:hover {
+    background: coral;
+    color: #fff;
+    font-weight: bolder;
+}
+/* */
+
+/* Bloc contact */
+.contact {
+    width: 30%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+/* Bloc réseaux */
+.rs {
+    width: 10%;
+    text-align: right;
+    position: absolute;
+    right: 1.5%;
+    top: 20%;
+}
+
+.rs img {
+    width: 40px;
+    display: block;
+    padding: 2px 0;
+}
+
+/* Bloc Expérience */
+
+.experience {
+    width: 90%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 0px 15px #333;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience h2 {
+    padding-top: 3%;
+    margin-left: 5%;
+}
+
+
+/* Bloc Section */
+.section {
+    width: 90%;
+    border-bottom: 2px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.logo {
+    width: 100px;
+    float: left;
+    padding-top: 15px;
+}
+
+.poste, .date, .detail {
+    margin-left: 150px;
+}
+
+.poste {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.date {
+    padding-top: 5px;
+}
+
+.detail {
+    padding: 10px 0 0px 0;
+}
+
+.section:last-child {
+    border: none;
+}
+
+
+
+/* Bloc Compétences */
+
+.competences {
+    width: 90%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 0px 15px #333;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.competences h2 {
+    padding-top: 3%;
+    margin-left: 5%;
+}
+
+.competences p {
+    display: inline-block;
+    width: 49%;
+}
+
+.qualite {
+    float: left;
+}
+
+.pourcent {
+    text-align: right;
+}
+
+.conteneur {
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    background: lightgray;
+}
+
+
+.conteneur-barre1 {
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    background: lightgreen;
+    border-radius: 0 5px 5px 0;
+    animation-name: jauge1;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes jauge1 {
+    from {width: 1px;}
+    to {width: 100%;}
+}
+
+
+.conteneur-barre2 {
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    background: lightsalmon;
+    border-radius: 0 5px 5px 0;
+    animation-name: jauge2;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes jauge2 {
+    from {width: 1px;}
+    to {width: 80%;}
+}
+.conteneur-barre3 {
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    background: lightslategray;
+    border-radius: 0 5px 5px 0;
+    animation-name: jauge3;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes jauge3 {
+    from {width: 1px;}
+    to {width: 75%;}
+}
+.conteneur-barre4 {
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    background: lightskyblue;
+    border-radius: 0 5px 5px 0;
+    animation-name: jauge4;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes jauge4 {
+    from {width: 1px;}
+    to {width: 85%;}
+}
+
+
+/* Bloc Footer */
+
+footer {
+    min-height: 100px;
+    background: url("../img/etoiles.jpg");
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width : 640px) {
+    .qui, .contact, .rs {
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
+
+    .qui {
+        width: 100%;
+        border-right: none;
+        padding: 20px 20px 0 20px;
+        text-align: justify;
+    }
+
+    .qui:first-child {
+        text-align: center;
+    }
+
+    .contact {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .rs {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rs img {
+        display: inline-block;
+        padding: 0 0 20px 0;
+    }
+
+    .photo {
+        text-align: right;
+        margin-top: -80px;
+        padding-right: 35px;
+    }
+}
